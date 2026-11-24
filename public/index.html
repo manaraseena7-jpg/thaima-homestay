@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Stay at Thaima Homestay in Thiruvananthapuram, Kerala. Explore our rooms and book your stay online.">
+  <title>Thaima Homestay | A calm Kerala stay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">T</span><span>THAIMA <small>HOMESTAY</small></span></a>
+<nav><a href="#rooms">Our rooms</a><a href="#experience">The stay</a><a href="#location">Location</a></nav><a class="nav-cta" href="#booking">Book your stay <span>↗</span></a>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-image"></div><div class="hero-shade"></div>
+  <div class="hero-content"><p class="eyebrow light">THIRUVANANTHAPURAM · KERALA</p>
+  <h1>A slower kind<br>of <em>getaway.</em></h1>
+  <p class="hero-copy">A welcoming place to pause, settle in and experience Kerala at your own pace.</p>
+  <a class="button button-light" href="#booking">Find your room <span>→</span></a>
+  <div class="hero-note"><span class="dot"></span> FOUR ROOMS · PERSONAL HOSPITALITY</div></div>
+  <div class="hero-caption">YOUR KERALA HOME AWAY FROM HOME</div>
+</section>
+<section class="intro section-wrap" id="experience"><div class="intro-label">01 / THE EXPERIENCE</div><div><p class="eyebrow">WELCOME TO THAIMA</p><h2>Make room for<br><em>good moments.</em></h2></div><div class="intro-copy"><p>Thoughtfully hosted and easy to settle into, Thaima Homestay is your base for discovering Thiruvananthapuram and the beauty of Kerala.</p><p class="muted">Four rooms. A personal welcome. Space to feel at home.</p></div></section>
+<section class="rooms-section" id="rooms"><div class="section-wrap"><div class="section-heading"><div><p class="eyebrow">02 / STAY YOUR WAY</p><h2>Find your <em>room.</em></h2></div><p class="muted heading-note">Choose the room that suits your stay.<br>Rates shown are starter placeholders.</p></div>
+<div class="room-grid" id="roomGrid">
+  <article class="room-card"><div class="room-photo photo-one"><span>01</span></div><div class="room-info"><div><h3>Room 1</h3><p>Comfortable stay · Add room details</p></div><strong>₹2,000 <small>/ night</small></strong></div><button class="text-link choose-room" data-room="room-1">Choose this room ↗</button></article>
+  <article class="room-card"><div class="room-photo photo-two"><span>02</span></div><div class="room-info"><div><h3>Room 2</h3><p>Comfortable stay · Add room details</p></div><strong>₹2,000 <small>/ night</small></strong></div><button class="text-link choose-room" data-room="room-2">Choose this room ↗</button></article>
+  <article class="room-card"><div class="room-photo photo-three"><span>03</span></div><div class="room-info"><div><h3>Room 3</h3><p>Comfortable stay · Add room details</p></div><strong>₹2,000 <small>/ night</small></strong></div><button class="text-link choose-room" data-room="room-3">Choose this room ↗</button></article>
+  <article class="room-card"><div class="room-photo photo-four"><span>04</span></div><div class="room-info"><div><h3>Room 4</h3><p>Comfortable stay · Add room details</p></div><strong>₹2,000 <small>/ night</small></strong></div><button class="text-link choose-room" data-room="room-4">Choose this room ↗</button></article>
+</div></div></section>
+<section class="booking-section" id="booking"><div class="section-wrap booking-layout"><div class="booking-intro"><p class="eyebrow light">03 / RESERVE YOUR STAY</p><h2>Your Kerala<br><em>story starts here.</em></h2><p>Choose your dates and room. Pay a secure advance online to confirm your reservation.</p><div class="booking-perks"><span>✓ Secure online payment</span><span>✓ Live room availability</span><span>✓ Instant booking confirmation</span></div></div>
+<form id="bookingForm" class="booking-card"><div class="form-title"><div><p class="eyebrow">BOOK DIRECT</p><h3>Plan your stay</h3></div><span class="secure">SECURE CHECKOUT</span></div>
+<label>Choose a room<select id="roomId" required><option value="">Select a room</option><option value="room-1">Room 1 — ₹2,000 / night</option><option value="room-2">Room 2 — ₹2,000 / night</option><option value="room-3">Room 3 — ₹2,000 / night</option><option value="room-4">Room 4 — ₹2,000 / night</option></select></label>
+<div class="date-row"><label>Check-in<input id="checkIn" type="date" required></label><label>Check-out<input id="checkOut" type="date" required></label></div>
+<div class="date-row"><label>Guests<select id="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label><label>Your name<input id="guestName" placeholder="Full name" required></label></div>
+<label>Email address<input id="email" type="email" placeholder="you@example.com" required></label>
+<label>Mobile number<input id="phone" type="tel" placeholder="+91 98765 43210" required></label>
+<div class="estimate" id="estimate"><span>Select a room and dates to see your estimate.</span></div>
+<button class="button button-dark pay-button" type="submit">Continue to secure payment <span>→</span></button>
+<p class="form-foot">Advance amount is calculated at checkout. Your booking is confirmed only after successful payment verification.</p>
+<div id="status" role="status" aria-live="polite"></div></form></div></section>
+<section class="location-section section-wrap" id="location"><div><p class="eyebrow">04 / FIND US</p><h2>See you in<br><em>Thiruvananthapuram.</em></h2><p class="muted">Kerala, India</p></div><div class="location-box"><div class="map-placeholder"><span>THAIMA HOMESTAY</span><small>THIRUVANANTHAPURAM · KERALA</small></div><p>Thiruvananthapuram, Kerala, India · Call / WhatsApp: <a href="https://wa.me/919995372068" target="_blank" rel="noopener">+91 99953 72068</a></p></div></section>
+</main>
+<footer><a class="brand brand-footer" href="#"><span class="brand-mark">T</span><span>THAIMA <small>HOMESTAY</small></span></a><p>Thoughtfully hosted in Kerala.</p><span>WhatsApp: <a href="https://wa.me/919995372068" target="_blank" rel="noopener">+91 99953 72068</a> · © <span id="year"></span> Thaima Homestay</span></footer>
+<script src="/app.js"></script>
+</body></html>
